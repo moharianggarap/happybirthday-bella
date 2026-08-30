@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Happy birthday || Mughal.Dev</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="birthdayCard">
+    <div class="cardFront">
+      <h3 class="happy">HAPPY BIRTHDAY!</h3>
+      <div class="balloons">
+        <div class="balloonOne"></div>
+        <div class="balloonTwo"></div>
+        <div class="balloonThree"></div>
+        <div class="balloonFour"></div>
+      </div>
+    </div>
+    <div class="cardInside">
+      <h3 class="back">HAPPY BIRTHDAY!</h3>
+      <p>hai bella,</p>
+      <p>selamat ulang tahun yang ke-18 yaa.
+semoga kedepannya semua urusanmu dimudahkan, dan jangan lupa istirahat meskipun sering kangen rumah yak wkwkwk tetep semangat yaa, kuliahnya.
+happy birthday yaa nabila 🌷
+</p>
+      <p class="name"></p>
+    </div>
+  </div>
+
+  <!-- Link Generator Button -->
+  <button class="fixed-btn" onclick="generateLink()">Create Your Own Link</button>
+  <div class="link-output" id="linkOutput"></div>
+
+<script src="main.js" type="text/javascript" charset="utf-8"></script>
+
+<audio id="bgMusic" loop>
+  <source src="music/fave.mp3" type="audio/mpeg">
+</audio>
+
+<script>
+  const music = document.getElementById("bgMusic");
+
+  document.addEventListener("click", () => {
+    music.play();
+  }, { once: true });
+</script>
+
+</body>
+</html>
